@@ -73,7 +73,7 @@ export default function RSVPForm({ onHandleResponseList}) {
          
           <p className='mb-4'>How many will be attending, including yourself?</p>
 
-        <select className='mb-4' name="quantityPeople" onChange={handleChange} value={formRSVP.attending}>
+        <select className='mb-4' name="quantityPeople" onChange={handleChange} value={formRSVP.quantityPeople}>
                 <option value="">Select People Attending</option>
                 <option value="1"> 1 </option>
                 <option value="2"> 2 </option>
@@ -101,8 +101,8 @@ export default function RSVPForm({ onHandleResponseList}) {
                 <option value="1" > 1 </option>
                 <option value="2"> 2 </option>
           </select>
-          <label className='mr-2'>First Name : </label><input className='mr-6' placeholder="enter first name" onChange={handleChange} type="text" name="firstName" value={formRSVP.firstName} placeholder="First Name" />
-          <label className='mr-2'>Last Name : </label><input className='mr-2' placeholder="enter last name" onChange={handleChange} type="text" name="lastName" value={formRSVP.lastName} placeholder="Last Name" />
+          <label className='mr-2'>First Name : </label><input className='mr-6' placeholder="enter first name" onChange={handleChange} type="text" name="firstName" value={formRSVP.firstName} />
+          <label className='mr-2'>Last Name : </label><input className='mr-2' placeholder="enter last name" onChange={handleChange} type="text" name="lastName" value={formRSVP.lastName} />
           <Button>Sign Up</Button>
           </div>
         </form>
